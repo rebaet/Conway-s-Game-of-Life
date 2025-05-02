@@ -1,1 +1,2 @@
 pygame-ce==2.5.3
+setuptools==80.1.0

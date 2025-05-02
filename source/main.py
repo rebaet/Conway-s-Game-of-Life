@@ -33,7 +33,7 @@ clear.fill((100,100,100))
 rand = pygame.Surface((130, 100))
 rand.fill((100,100,100))
 
-text_font = pygame.font.Font("Minecraft.ttf", 25)
+text_font = pygame.font.Font("assets/Minecraft.ttf", 25)
 def draw_text(text, font, text_col, x, y):
     img = font.render(text, True, text_col)
     screen.blit(img, (x,y))
