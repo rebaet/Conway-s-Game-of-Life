@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/rubaiyet/Documents/Repos/Conway's Game of Life/.venv"
+set -gx VIRTUAL_ENV "/Users/rubaiyet/Documents/Repos/conways-game-of-life-pygame/.venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

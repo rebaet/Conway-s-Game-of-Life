@@ -42,10 +42,10 @@ deactivate nondestructive
 if [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-    export VIRTUAL_ENV=$(cygpath "/Users/rubaiyet/Documents/Repos/Conway's Game of Life/.venv")
+    export VIRTUAL_ENV=$(cygpath "/Users/rubaiyet/Documents/Repos/conways-game-of-life-pygame/.venv")
 else
     # use the path as-is
-    export VIRTUAL_ENV="/Users/rubaiyet/Documents/Repos/Conway's Game of Life/.venv"
+    export VIRTUAL_ENV="/Users/rubaiyet/Documents/Repos/conways-game-of-life-pygame/.venv"
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
