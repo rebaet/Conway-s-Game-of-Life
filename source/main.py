@@ -123,10 +123,10 @@ while True:
     if event.type == pygame.MOUSEBUTTONDOWN and 900 <= mouse_x < 1175 and 165 <= mouse_y < 265:
         play_pause.fill((80,100,90))
 
-    alive = gamelogic.count_alive(state)
+    population = gamelogic.count_alive(state)
 
     # Only Unpause if the game is paused, there are alive cells and the state is not stagnant
-    if not paused and alive and state != gamelogic.next_state(state):
+    if not paused and population and state != gamelogic.next_state(state):
         state = gamelogic.next_state(state)
         generation += 1
     else:
@@ -139,7 +139,7 @@ while True:
     # Blit Stats Surface
     screen.blit(stats_surface, (900,25))
     draw_text("Generation:    " + str(generation), text_font, green, 915, 55)
-    draw_text("Live Cells:      " + str(alive), text_font, green, 915, 105)
+    draw_text("Population:     " + str(population), text_font, green, 915, 105)
 
     # Blit Buttons
     screen.blit(play_pause, (900, 165))
